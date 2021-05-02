@@ -1,0 +1,90 @@
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-search-results header a,
+    #page-home header a,
+    #page-create-point header a {
+        width: 220px;
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+    
+    #page-search-results .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-width: 740px) {
+    .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form .field-group {
+        flex-direction: column;
+    }
+
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    #page-home main h1 {
+        font-size: 45px;
+    }
+
+    #page-create-point .items-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #page-create-point form button {
+        width: 100%;
+        height: 56px;
+    
+        margin: 0;
+        margin-top: 40px;
+    }
+    
+    #page-create-point form {
+        padding: 20px;
+    }
+
+    .modal .content {
+        width: 80%;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 150px;
+    }
+}
